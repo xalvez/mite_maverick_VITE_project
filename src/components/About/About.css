@@ -1,0 +1,587 @@
+.about-doctor-con-outer-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-calander-teal-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 190px;
+  min-height: 500px;
+  overflow: hidden;
+  /* margin-top: 200px; */
+  flex-direction: row;
+}
+
+.image-container-about-section-box {
+  background-color: #5ac5c540;
+  max-width: 100%;
+  border-radius: 50px;
+  position: relative;
+  right: 50px;
+}
+
+/* Fix for the laptop image dimensions */
+.laptop-img-in-about-section {
+  position: relative;
+  right: 50px;
+}
+
+.About-section-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.About-client-at-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.hero-description p {
+  margin-bottom: 15px;
+}
+
+/* Styles for the "Client" button */
+
+/* Container for the laptop and mobile mockup */
+.about-section-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align to the right in LTR */
+  align-items: center;
+  position: relative;
+  max-width: 600px; /* Limits the size on large screens */
+}
+
+/* Mockup Placeholder styles */
+.laptop-placeholder {
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.1); /* Replace with image later */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RTL Support */
+/* .rtl .hero-teal-card {
+  flex-direction: row-reverse;
+  text-align: right;
+} */
+
+/* ------------- second section ------------- */
+
+.medical-portal-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.medical-portal-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.medical-portal-desc p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Image Container Logic */
+
+/* 1. This stretches from the very left to the very right of the screen */
+.medical-portal-full-bleed {
+  margin: 0;
+  width: 100%;
+    background-image: url('../../assets/images/About/doctor_background.png'); /* No background image */
+  background-size: cover;
+
+  /* Centers the image so it doesn't look cut off on small screens */
+  background-position: center;
+
+  /* Prevents the image from tiling/repeating */
+  background-repeat: no-repeat;
+
+  /* Fallback height so you can actually see the image */
+  min-height: 500px;
+  margin-top: 100px; /* Space for the image pop-out */
+  overflow: visible;
+  padding: 10px 200px;
+}
+
+/* 2. This centers your content and keeps it from getting too wide on big screens */
+.medical-portal-card-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible; /* CRITICAL for the pop-out image */
+  flex-direction: row; /* Force text on left, image on right */
+
+}
+
+/* 3. The Image Pop-out logic remains the same */
+.medical-portal-img-box {
+  flex: 1;
+  margin-top: -120px; /* Adjust to get that 20% pop-out effect */
+}
+
+.medical-portal-img {
+  width: 170%;
+  height: auto;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.3));
+  /* clip-path: polygon(0% 0%, 80% 0%, 80% 100%, 0% 100%); */
+  position: relative;
+  top: 17px;
+}
+
+.doctor-hero-content {
+  flex: 1.2;
+  color: white;
+}
+
+/* Main Text */
+.doctor-hero-title {
+  font-size: 1.8rem;
+  margin: 0 0 15px 0;
+  line-height: 1.2;
+}
+
+/* Secondary Text */
+.doctor-hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+/* 3. Vertical List with Square Bullets */
+.doctor-hero-square-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px 0; /* Space above button */
+}
+
+.doctor-hero-square-bullets li {
+  position: relative;
+  padding-left: 25px; /* Space for the square icon */
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+/* Creating the Square Bullets */
+.doctor-hero-square-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px; /* Aligns square with the first line of text */
+  left: 10px;
+  width: 5px; /* Square width */
+  height: 5px; /* Square height */
+  background-color: #ffffff;
+}
+
+/* 4. The Button */
+.doctor-hero-btn {
+  display: inline-block;
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  padding: 15px 70px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  font-size: large;
+}
+
+.doctor-start-now-btn {
+  display: inline-block;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 15px 70px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  font-size: large;
+}
+
+/* Responsive fix for mobile */
+@media (max-width: 768px) {
+  .medical-portal-card {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .medical-portal-img-box {
+    margin-top: -80px; /* Smaller pop-out for mobile */
+    order: -1; /* Puts image on top of text in mobile */
+  }
+
+  .medical-portal-content {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-teal-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    border-radius: 30px;
+  }
+
+  .hero-image-container {
+    margin-top: 40px;
+    justify-content: center;
+  }
+}
+
+/* RTL adjustment for the image position */
+/* .rtl .hero-image-container {
+  justify-content: flex-start;  
+} */
+
+/* Responsive fix for smaller screens */
+@media (max-width: 992px) {
+  .hero-image-container {
+    max-width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .laptop-img {
+    width: 90%; /* Slightly smaller on tablets/phones */
+  }
+}
+
+/* --- Modal Styles --- */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7) !important; /* Dim the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Make sure it's on top of everything */
+  padding: 20px;
+}
+
+.modal-window {
+  background-color: white !important; /* Ensure the popup itself is white */
+  z-index: 10000;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal-close-btn:hover {
+  color: #333;
+}
+
+.modal-body h3 {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.modal-body p {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.doctor-hero-btn,
+.doctor-start-now-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Container for Flag, Number, and Button */
+.phone-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+/* Flag styling */
+.country-flag {
+  width: 60px;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Phone number text */
+.phone-number {
+  color: #008080;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Copy Button Styling */
+.copy-btn {
+  background-color: #008080;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  min-width: 70px;
+}
+
+.copy-btn:hover {
+  background-color: #006666;
+}
+
+/* RTL Support for the phone container */
+/* .rtl .phone-container {
+  flex-direction: row-reverse;
+} */
+
+.Doctor-about-section-divider {
+  border: 0;
+  height: 30px; /* Increased from 1px to 4px for a bold look */
+  background-color: #5a6665; /* Your brand teal */
+  max-width: 2px;
+  border-radius: 2px; /* Smooths the edges of the bold line */
+  width: 400px;
+  box-shadow: 0px 1px 50px rgb(255, 0, 0);
+}
+
+.ltr-direction {
+  direction: ltr;
+}
+
+.about-doctor-con-outer-container:not(.rtl-direction) {
+  direction: ltr;
+}
+
+.rtl .About-section-content:not(.rtl-direction) {
+  direction: rtl;
+}
+
+.rtl .doctor-hero-content:not(.rtl-direction) {
+  direction: rtl;
+}
+
+.rtl .doctor-hero-square-bullets li:not(.rtl-direction) {
+  direction: rtl;
+}
+
+.rtl-text .phone-container {
+  direction: ltr;
+  display: flex;
+  flex-direction: row;
+}
+
+.rtl-text .doctor-hero-square-bullets li::before {
+  left: auto;
+  right: 10px; /* Position bullet on the right */
+}
+
+/* --- 3. Fixing the Bullet Points --- */
+/* In Arabic, the bullet must move from the left of the text to the right */
+.rtl-text .doctor-hero-square-bullets li {
+  padding-left: 0;
+  padding-right: 25px; /* Switch padding to the right */
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+
+/* 1. Tablet View (768px) */
+@media (max-width: 768px) {
+  .about-calander-teal-card,
+  .medical-portal-card-container {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 40px 30px;
+  }
+
+  .About-section-content,
+  .doctor-hero-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .image-container-about-section-box,
+  .laptop-img-in-about-section {
+    right: 0 !important;
+    left: 0 !important;
+    margin: 0 auto;
+    max-width: 300px; /* Small image for tablet */
+  }
+
+  .medical-portal-img-box {
+    order: -1;
+    margin-top: -80px;
+  }
+
+  .medical-portal-img {
+    width: 250px; /* Specific small size for tablet */
+    top: 0;
+  }
+
+  .medical-portal-full-bleed {
+    padding: 60px 20px 20px;
+    margin-top: 50px;
+  }
+}
+
+/* 2. Large Mobile (480px) */
+@media (max-width: 480px) {
+  .About-client-at-title {
+    font-size: 1.8rem;
+  }
+  .doctor-hero-title {
+    font-size: 1.6rem;
+  }
+
+  .laptop-img-in-about-section {
+    width: 220px; /* Suitable size for large phones */
+  }
+
+  .medical-portal-img {
+    width: 200px; /* Suitable size for large phones */
+  }
+
+  .doctor-hero-btn,
+  .doctor-start-now-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* 3. Small Mobile (340px) */
+@media (max-width: 340px) {
+  .About-client-at-title {
+    font-size: 1.4rem;
+  }
+  .doctor-hero-title {
+    font-size: 1.3rem;
+  }
+
+  .about-calander-teal-card {
+    padding: 30px 15px;
+  }
+
+  .laptop-img-in-about-section {
+    width: 180px; /* Very small for tiny screens */
+  }
+
+  .medical-portal-img {
+    width: 160px; /* Very small for tiny screens */
+  }
+
+  .hero-description p {
+    font-size: 0.9rem;
+  }
+}
+
+ 
+
+
+
+/* Responsive Overrides */
+
+/* Tablet and Mobile (768px and below) */
+@media (max-width: 768px) {
+  .modal-window {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .phone-container {
+    flex-direction: column !important; /* Force stacking */
+  }
+
+  /* Adjust the divider to fit horizontally now that elements are stacked */
+  .Doctor-about-section-divider {
+    width: 80% !important;
+    max-width: 250px;
+    height: 2px; /* Changed from vertical line to horizontal line */
+    margin: 10px 0;
+  }
+}
+
+/* Large Mobile (480px) */
+@media (max-width: 480px) {
+  .phone-number {
+    font-size: 1.4rem; /* Prevent overflow on medium phones */
+  }
+  
+  .modal-body h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small Mobile (340px) */
+@media (max-width: 340px) {
+  .phone-number {
+    font-size: 1.1rem; /* Scaled for very narrow screens */
+  }
+
+  .copy-btn {
+    width: 100%; /* Wider button for easier tapping */
+    padding: 12px;
+  }
+}

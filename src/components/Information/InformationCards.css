@@ -1,0 +1,259 @@
+.info-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.info-main-title {
+  color: #008080;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  text-transform: lowercase;
+}
+
+.info-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1440px; /* Increased max-width to allow wider cards */
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  flex: 1;
+  min-width: 350px;  /* Increased minimum width for a wider look */
+  max-width: 450px;  /* Increased maximum width */
+  border-radius: 25px;
+  padding: 50px 35px;
+  display: flex;
+  align-items: center; /* Centers image and text vertically against each other */
+  text-align: left;
+  color: white;
+  min-height: 380px;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Background colors */
+.card-teal {
+background: linear-gradient(to right, #19D3AE 20%, #0FCFEC 80%);
+}
+
+.card-dark {
+  background-color: #3f4756; 
+  color: white;
+}
+
+/* Image Positioning (Left Center) */
+.card-image-box {
+  flex-shrink: 0;
+  width: 80px;       /* Fixed area for the image */
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-icon-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Content Box */
+.card-content-box {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  margin: 0 0 15px 0;
+  font-weight: bold;
+}
+
+/* Square Bullet List */
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+.card-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.card-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Responsive fix */
+@media (max-width: 1200px) {
+  .info-card {
+    max-width: 100%;
+    min-width: 300px;
+  }
+}
+
+/* ... Keep your existing info-section and container styles ... */
+
+.info-card {
+  flex: 1;
+  min-width: 350px;
+  max-width: 480px; /* Made slightly wider as requested */
+  border-radius: 25px;
+  padding: 50px 35px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: white;
+  min-height: 380px;
+  /* HOVER EFFECT: Smooth transition for scaling */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* Make card a little bit bigger on hover */
+.info-card:hover {
+  transform: scale(1.05); /* Increases size by 5% */
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Outer cards gradient */
+.card-teal {
+  background: linear-gradient(to right, #19D3AE 20%, #0FCFEC 80%);
+}
+
+/* Middle card - Different colors (Dark Slate Blue) */
+.card-dark-center {
+  background-color: #3f4756; 
+  color: white;
+}
+
+/* ... Keep existing image and content box styles ... */
+
+/* Square Bullet List */
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white; /* Changed to white to be visible on dark/teal backgrounds */
+}
+
+.card-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background-color: white; /* White square bullets */
+}
+
+
+
+
+/* Target text in the FIRST and LAST cards (Teal) */
+.card-teal .card-title,
+.card-teal .card-list {
+  color: #000000; /* Changes Title and List items to White */
+}
+
+/* Target the square bullets in the teal cards specifically */
+.card-teal .card-list li::before {
+  background-color: #000000; /* Changes bullets to White to match text */
+}
+
+/* Target text in the MIDDLE card (Dark) */
+.card-dark-center .card-title,
+.card-dark-center .card-list {
+  color: #ffffff; /* Keeps middle card text White */
+}
+
+.card-dark-center .card-list li::before {
+  background-color: #ffffff;
+}
+
+
+
+ 
+ 
+.rtl-text .card-list li::before {
+  left: auto;
+  right: 10px; /* Position bullet on the right */
+}
+
+.rtl-text .card-list li {
+  padding-left: 0;
+  padding-right: 25px; /* Switch padding to the right */
+}
+
+
+.rtl-text .card-image-box {
+  margin-right: 0;
+  margin-left: 25px; /* Switch margin to the left */
+}
+
+.rtl-direction .info-cards-container{
+  direction: ltr;
+}
+
+
+/* ... Keep all your base styles (colors, sizes, etc.) ... */
+
+/* BASE CARD STRUCTURE (LTR) */
+.info-card {
+  display: flex;
+  flex-direction: row; /* Image left, Content right */
+  align-items: center;
+  text-align: left;
+}
+
+.card-image-box {
+  flex-shrink: 0;
+  width: 80px;
+  margin-right: 25px; /* Gap for LTR */
+}
+
+/* RTL ADJUSTMENTS */
+.rtl-mode .info-card {
+  flex-direction: row-reverse; /* Image right, Content left */
+  text-align: right;
+  direction: rtl;
+}
+
+.rtl-mode .card-image-box {
+  margin-right: 0;
+  margin-left: 25px; /* Move gap to the left side of the image for RTL */
+}
+
+/* RTL Bullets */
+.rtl-mode .card-list li {
+  padding-left: 0;
+  padding-right: 20px; /* Space for bullet on the right */
+}
+
+.rtl-mode .card-list li::before {
+  left: auto;
+  right: 0; /* Move square bullet to the right side */
+}
+
+/* Ensure the main container doesn't reverse the card order, 
+   only the content inside the cards flips */
+.rtl-mode .info-cards-container {
+  flex-direction: row; 
+}

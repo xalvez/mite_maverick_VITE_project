@@ -1,0 +1,21 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app.rtl {
+  font-family: var(--font-family-ar);
+}
+
+.app.ltr {
+  font-family: var(--font-family-en);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;  
+}

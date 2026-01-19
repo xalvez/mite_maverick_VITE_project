@@ -1,0 +1,15 @@
+{
+      "hero": {
+    "title": "A platform that brings together doctors and patients in one place",
+    "subtitle": "Find a reliable doctor / hospitals / centers, book your appointment easily,",
+    "orJoin": "or join as a doctor and start seeing your patients in a smarter way.",
+    "patientButton": "Find a Doctor",
+    "doctorButton": "Join as Doctor",
+    "forClient": "Client",
+    "forDoctor": "doctor / hospitals / centers"
+  },
+  "buttons": {
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  }
+}

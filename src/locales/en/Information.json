@@ -1,0 +1,33 @@
+{
+
+  "title_section": "Information",
+
+
+  "key_features": {
+    "title": "Key features:",
+    "items": [
+      "Smart search by location and specialty,",
+      "View addresses on a map, find doctors, hospitals, and centers near you,",
+      "Contact doctors, hospitals, or centers directly,",
+      "Book and manage appointments,",
+      "Customer reviews."
+    ]
+  },
+  "why_us": {
+    "title": "Why Us?",
+    "items": [
+      "Save time and effort",
+      "Accurate and up-to-date information",
+      "Direct booking without intermediaries"
+    ]
+  },
+  "how_it_works": {
+    "title": "How it works",
+    "items": [
+      "auto detect area",
+      "Browse the list of doctors / hospitals / centers",
+      "Choose the desired doctor / hospitals / centers",
+      "Book your appointment in one click"
+    ]
+  }
+}
