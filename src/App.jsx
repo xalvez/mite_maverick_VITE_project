@@ -2,7 +2,7 @@ import Contact from "./components/ContactUs/Contact";
 // import Hero from "./components/navbar/Hero";
 import Hero from "./components/Hero/Hero";
 import ServicesSection from "./components/services/ServicesSection";
-import About from "./components/about/About";
+
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import OurVision from "./components/ourvision/OurvVsion";
@@ -95,7 +95,7 @@ function App() {
     <div className="modern-container">
       <Navbar toggleTheme={toggleTheme} theme={theme} />
       <Hero />
-      <About />
+     
       <OurVision/>
       <ServicesSection />
       <ProjectQuote/>
