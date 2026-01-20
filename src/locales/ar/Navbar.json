@@ -1,9 +1,10 @@
 {
   "nav": {
     "home": "الرئيسية",
-    "findDoctor": "حول التطبيق",
-    "hospitals": "معلومات",
-    "centers": "من نحن",
-    "forDoctors": "تحميل"
+    "about": "من نحن",
+    "ourVision": "رؤيتنا",
+    "services": "خدماتنا",
+    "yourRequest": "طلبك",
+    "contact": "تواصل معنا"
   }
 }

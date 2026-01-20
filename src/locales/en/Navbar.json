@@ -1,9 +1,10 @@
 {
   "nav": {
     "home": "Home",
-    "findDoctor": "About",
-    "hospitals": "Information",
-    "centers": "About Us",
-    "forDoctors": "Download"
+    "about": "About Us",
+    "ourVision": "Our Vision",
+    "services": "Services",
+    "yourRequest": "Your Request",
+    "contact": "Contact"
   }
 }

@@ -1,30 +1,25 @@
 {
-  "about": {
-    "title": "Find your doctor, hospital, or center, and book your appointment, with ease.",
-    "subtitle": "All the medical information you need... in one app.",
-    "search_prompt": "Looking for healthcare?",
-    "features": [
-      "Search by specialty or location",
-      "Find the exact address",
-      "Contact us directly",
-      "Book an appointment easily"
-    ],
-    "cta_button": "Start Now"
-  },
-
-  
-  "doctor_section": {
-    "title": "Turn your search into a confirmed booking. Join the app and start seeing your patients smarter.",
-    "subtitle": "Are you a doctor? Connect with your patients better through:",
-    "benefits": [
-      "Professional profile page",
-      "Increase booking",
-      "Schedule appointment"
-    ],
-    "cta_button": "Start Now"
-  },
-  "modal": {
-    "welcome_title": "Welcome as a doctor, hospital, or center.",
-    "contact_instruction": "Please contact us at our number."
-  }
+  "title": "About Us",
+  "heading": "Crafting the Future, Line by Line",
+  "paragraphs": [
+    "We are a team driven by vision and precision, crafting meaningful digital experiences. We focus on what truly matters—refining every detail to build solutions that don't just work, but excel."
+  ],
+  "stats": [
+    {
+      "value": "15+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "320+",
+      "label": "Global Systems"
+    },
+    {
+      "value": "99.9%",
+      "label": "System Uptime"
+    },
+    {
+      "value": "24/7",
+      "label": "Live Support"
+    }
+  ]
 }
