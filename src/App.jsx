@@ -5,14 +5,13 @@ import ServicesSection from "./components/services/ServicesSection";
 import About from "./components/about/About";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer/Footer";
- import OurVision from "./components/ourvision/OurvVsion";
+import OurVision from "./components/ourvision/OurvVsion";
 import React, { useState, useEffect } from "react";
 import "./App.css";
 // import OurVision from "./components/ourvision/ourvision";
 import ProjectQuote from "./components/Request/ProjectQuote";
 
 import { LanguageProvider } from './context/LanguageContext';
-
  
 
 function App() {
